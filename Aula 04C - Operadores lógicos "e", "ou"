@@ -1,0 +1,63 @@
+programa
+{
+    funcao inicio() 
+    {   
+        cabecalio()
+        topicos()
+        declarandoVariavelIdade()
+    }    
+     
+     
+    funcao cabecalio() 
+    {
+        escreva ("           Bem vindo ao curso de lógica de programação em Portugol\n")
+        escreva ("\n")
+        
+        escreva ("      Aula 03 - Exercicio de calculo de idade com leitura de teclado\n")
+        escreva ("\n")
+        
+        escreva ("Nesta aula você irá aprender a:\n")
+    }
+    
+    
+    funcao topicos()
+    {
+        escreva ("*Uso de operadores lógicos (Ou, E)*\n") 
+        escreva ("\n")
+        escreva ("\n")
+        
+        escreva("**OBS: (O código do programa começa a partir da primeira linha de #)**\n")
+
+        escreva("##########################################################################\n")
+    }
+    
+    
+    funcao declarandoVariavelIdade()
+    {
+        //declarar varialveis
+        inteiro ano_atual, nascimento, idade 
+    
+        escreva ("\nDigite aqui o ano atual: ")
+        leia(ano_atual)
+     
+        escreva ("\nDigite aqui a sua data de nascimento: ")
+        leia(nascimento)
+     
+        idade = ano_atual - nascimento 
+        escreva ("\nSua idade em 2021 é de ", idade, " anos.\n")
+    
+        se (idade < 16)
+        {
+            escreva ("Com ", idade, " anos você não pode votar ainda!")
+        }
+        
+        senao se((idade < 18) ou (idade >= 70))
+        {
+            escreva ("\nCom ", idade, " anos o voto é facultativo!")
+        }
+        
+        senao{
+            escreva ("\nCom", idade, " anos o voto é obrigatório!")
+        }
+    }
+}
