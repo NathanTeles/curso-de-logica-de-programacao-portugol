@@ -22,7 +22,7 @@ programa
     
     funcao topicos()
     {
-        escreva ("*Declarar variável através da digitação do teclado)*\n") 
+        escreva ("*Condicionamento de função usando Senao se)*\n") 
         escreva ("\n")
         escreva ("\n")
         
